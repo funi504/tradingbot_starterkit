@@ -5,8 +5,8 @@ import requests
 
 # Read Kraken API key and secret stored in environment variables
 api_url = "https://api.kraken.com"
-api_key = '24DZbSgiL7Mda+p8VhhFMys8IZCmLmCFZ4HbYvUHn0YFXYGAkVo30/vu' #os.environ['API_KEY_KRAKEN']
-api_sec = 'YV5OdhMwJD84580JYM0ZqzZhAv/rTM5ve7quXErXu89/S2WTbx3modNaQXB1LqU07f+9Zxk1+qslhUAOas2uuA=='#os.environ['API_SEC_KRAKEN']
+api_key = os.environ['API_KEY_KRAKEN']
+api_sec = os.environ['API_SEC_KRAKEN']
 
 # Attaches auth headers and returns results of a POST request
 def kraken_request(uri_path, data, api_key, api_sec):
