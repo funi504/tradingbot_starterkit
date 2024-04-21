@@ -27,7 +27,6 @@ buy = kraken_request('/0/private/AddOrder', {
     "price": 10
 }, api_key, api_sec)
 
-print(buy.json())
 
 sell = kraken_request('/0/private/AddOrder',{
   "nonce": str(int(1000*time.time())),
